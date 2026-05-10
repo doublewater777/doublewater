@@ -23,7 +23,9 @@ export function getAllThoughts(): Thought[] {
     return {
       slug,
       title: data.title ?? slug,
-      date: data.date ?? "1970-01-01",
+      date: data.date
+      ? new Date(data.date).toISOString().slice(0, 10)
+      : "1970-01-01",
       summary: data.summary ?? "",
       tags: data.tags ?? [],
       content

@@ -19,10 +19,7 @@ export function Nav() {
         </Link>
         <nav className="flex items-center gap-1 text-[14px]">
           {site.nav.map((item) => {
-            const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+            const active = pathname.startsWith(item.href);
             return (
               <Link
                 key={item.href}
