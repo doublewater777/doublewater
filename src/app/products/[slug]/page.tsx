@@ -65,8 +65,16 @@ export default async function ProductDetail(
 
       <div className="prose-dw">
         <p>{product.description}</p>
+        {product.highlights && (
+          <ul>
+            {product.highlights.map((h) => (
+              <li key={h}>{h}</li>
+            ))}
+          </ul>
+        )}
       </div>
 
+      {product.url && (
       <div className="mt-12 flex flex-wrap gap-3">
         <a
           href={product.url}
@@ -77,6 +85,7 @@ export default async function ProductDetail(
           访问产品 <span aria-hidden>↗</span>
         </a>
       </div>
+      )}
     </article>
   );
 }

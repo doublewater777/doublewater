@@ -4,7 +4,7 @@ import { products } from "@/content/products";
 
 export default function HomePage() {
   const latestThoughts = getAllThoughts().slice(0, 4);
-  const featured = products.slice(0, 3);
+  const featured = products.slice(0, 4);
 
   return (
     <div className="container-wide pt-20 sm:pt-28">
@@ -18,7 +18,7 @@ export default function HomePage() {
           <span className="cursor-blink" />
         </h1>
         <p className="mt-6 max-w-[560px] text-[17px] leading-[1.8] text-[color:var(--color-fg-muted)]">
-          我在做独立产品，也在把每一次追赶 AI 浪潮的笔记写下来。
+          我在做独立产品：面向海外的 AI 视频站，和 Apple 生态里的小 App。
           这里有我做过的东西，和路上想明白的事。
         </p>
 

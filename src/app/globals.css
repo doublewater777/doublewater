@@ -163,7 +163,10 @@
 }
 
 .prose-dw ul, .prose-dw ol { margin: 1.25em 0; padding-left: 1.5rem; }
+.prose-dw ul { list-style: disc; }
+.prose-dw ol { list-style: decimal; }
 .prose-dw li { margin: 0.4em 0; }
+.prose-dw li::marker { color: var(--color-fg-subtle); }
 .prose-dw hr { border: 0; border-top: 1px solid var(--color-border); margin: 2.5rem 0; }
 
 /* View transitions for theme change */
