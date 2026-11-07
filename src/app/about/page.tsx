@@ -65,7 +65,7 @@ export default function AboutPage() {
           <a href={site.social.github} target="_blank" rel="noreferrer">
             GitHub
           </a>
-          ，也可以发邮件到 <a href={site.social.email}>{site.author.email}</a>。合作、交流、工作机会，或者只是打个招呼，都欢迎。
+          ，也可以发邮件到 <a href={site.social.email}>{site.author.email}</a>。合作、交流、工作机会，或者只是打个招呼，都欢迎。完整经历见<a href="/resume.pdf" target="_blank" rel="noreferrer">简历（PDF）</a>。
         </p>
 
         <hr />

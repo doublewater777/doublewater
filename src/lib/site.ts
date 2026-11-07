@@ -16,6 +16,7 @@ export const site = {
   nav: [
     { label: "关于", href: "/about" },
     { label: "想法", href: "/thoughts" },
-    { label: "产品", href: "/products" }
+    { label: "产品", href: "/products" },
+    { label: "简历", href: "/resume.pdf" }
   ]
 } as const;
