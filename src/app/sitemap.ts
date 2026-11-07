@@ -4,7 +4,7 @@ import { products } from "@/content/products";
 import { getAllThoughts } from "@/lib/thoughts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["", "/about", "/thoughts", "/products"].map((p) => ({
+  const staticRoutes = ["", "/about", "/thoughts", "/products", "/resume"].map((p) => ({
     url: `${site.url}${p}`,
     lastModified: new Date()
   }));

@@ -20,25 +20,12 @@ export function Nav() {
         <nav className="flex items-center gap-1 text-[14px]">
           {site.nav.map((item) => {
             const active = pathname.startsWith(item.href);
-            if (item.href.endsWith(".pdf")) {
-              return (
-                <a
-                  key={item.href}
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-md px-3 py-1.5 text-[color:var(--color-fg-muted)] transition hover:text-[color:var(--color-fg)]"
-                >
-                  {item.label}
-                </a>
-              );
-            }
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={
-                  "rounded-md px-3 py-1.5 transition " +
+                  "rounded-md px-2 py-1.5 transition sm:px-3 " +
                   (active
                     ? "text-[color:var(--color-fg)]"
                     : "text-[color:var(--color-fg-muted)] hover:text-[color:var(--color-fg)]")
